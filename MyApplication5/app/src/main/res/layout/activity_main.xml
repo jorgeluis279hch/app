@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginForm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        tools:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/correoLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#005999"
+        android:backgroundTintMode="add"
+        android:text="LOGIN"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="191dp"
+            android:layout_height="52dp"
+            android:gravity="right"
+            android:text="¿Aun no tienes cuenta?" />
+
+        <TextView
+            android:id="@+id/linkRegistrar"
+            android:layout_width="104dp"
+            android:layout_height="55dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+
+            android:text="Registrate aqui"
+            android:textColor="#03A9F4"
+            android:textColorHighlight="#03A9F4"
+            android:textColorHint="#03A9F4" />
+    </LinearLayout>
+
+</LinearLayout>
